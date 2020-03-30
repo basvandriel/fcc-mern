@@ -1,0 +1,5 @@
+Exercise Tracker app
+
+- Exercises
+- Users
+- Every exercise has one user
