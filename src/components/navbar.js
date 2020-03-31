@@ -12,12 +12,12 @@ export default class Navbar extends Component {
                             <Link to="/" className="nav-link App-link">Exercises</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/create" className="nav-link App-link">Create Exercise Log</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/user/create" className="nav-link App-link">Create User</Link>
+                            <Link to="/create" className="nav-link App-link">Create exercise</Link>
                         </li>
                     </ul>
+                    <Link to="/user/create" className="nav-link">
+                        <i className="fa fa-user fa-align-center"/>
+                    </Link>
                 </div>
             </nav>
         );
