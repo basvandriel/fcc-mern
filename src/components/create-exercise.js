@@ -59,8 +59,6 @@ export default class CreateExercise extends Component {
     }
 
     onSubmit(e) {
-
-
         e.preventDefault();
 
         const attributes = {
@@ -78,7 +76,6 @@ export default class CreateExercise extends Component {
     render() {
         return (
             <div>
-                <h3>Create New Exercise Log</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
@@ -108,7 +105,7 @@ export default class CreateExercise extends Component {
                     <div className="form-group">
                         <label>Duration (in minutes): </label>
                         <input
-                            type="text" pattern='[0-9]*'
+                            type="number" pattern='[0-9]*'
                             className="form-control"
                             value={this.state.duration}
                             onChange={this.onChangeDuration}
@@ -125,7 +122,7 @@ export default class CreateExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" value="Create Exercise Log" className="btn btn-primary"/>
+                        <input type="submit" value="Create Exercise" className="btn btn-primary"/>
                     </div>
                 </form>
             </div>
